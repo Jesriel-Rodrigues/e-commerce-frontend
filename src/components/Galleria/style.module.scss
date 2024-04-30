@@ -1,8 +1,6 @@
 .card {   
-    display: flex;        
-    justify-content: center; /* Centraliza horizontalmente */   
-    max-height: 1000px; /* Altura máxima do banner */
-    background-color: #f0f0f0; /* Cor de fundo do banner */
-    overflow: visible; /* Esconde o conteúdo que ultrapassa o tamanho */
-
+    display: flex;
+    width: 100%;        
+    justify-content: center; 
+    background: #fff;
 }

@@ -14,7 +14,7 @@ export default function Header(props: HeaderProps) {
         <Image src={logo} alt="Luxo de Bíblia" />
       </div>
       <div className={style.search}>
-        <input type="text" placeholder="Pesquisar" />
+        <input type="text" placeholder="Buscar produtos" />
         <span className={style.icon}>
           <FaSistrix />
         </span>

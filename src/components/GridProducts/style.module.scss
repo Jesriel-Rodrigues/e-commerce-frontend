@@ -1,0 +1,19 @@
+.sectionGrid {
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  width: 100%;
+  grid-gap: 2rem;
+
+  @media screen and (max-width: 1200px) {
+    padding: 0.5rem calc((100vw - 900px) / 2);
+  }
+
+  @media screen and (max-width: 950px) {
+    padding: 0.5rem calc((100vw - 600px) / 2);
+  }
+
+  @media screen and (max-width: 640px) {
+    padding: 0.5rem;
+  }
+}

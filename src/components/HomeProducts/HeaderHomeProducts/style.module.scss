@@ -1,0 +1,63 @@
+.mainHeaderHomeProducts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0;
+
+  h2 {
+    font-weight: 600;
+    color: #2d2a2a;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #777777;
+        transition: all 0.3s;
+        border-bottom: 2px solid #ffffff00;
+        padding-bottom: 0.2rem;
+        position: relative;
+
+        &:hover {
+          color: #000;
+          cursor: pointer;
+        }
+
+        &::before {
+          content: "";
+          background: var(--secondaryColor);
+          display: block;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+
+      .active {
+        color: #000;
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
