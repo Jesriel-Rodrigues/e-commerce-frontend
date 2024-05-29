@@ -37,6 +37,9 @@
     font-size: 1.4rem;
 
     a {
+      i {
+        display: flex;
+      }
       &:hover {
         color: var(--secondaryColor);
       }
