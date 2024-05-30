@@ -1,19 +1,23 @@
 import style from "./style.module.scss";
 import { IconInsta } from "@/components/Icons/IconInsta";
 import { IconMenu } from "@/components/Icons/IconMenu";
-import { IconWhatsApp } from "@/components/Icons/IconWhatsapp";
+import { IconWhatsApp } from "@/components/Icons/IconWhatsApp";
+import { IconArrowUp } from "@/components/Icons/IconsArrowUp";
 import Link from "next/link";
 
 interface NavDesktopProps {}
 export default function NavDesktop(props: NavDesktopProps) {
   return (
     <nav className={style.navMain}>
-      <span>
+      <span className={style.menuOpen}>
         <button type="button" className={style.btnHover}>
           <i>
             <IconMenu />
           </i>{" "}
           Procurar Categorias
+          <i className={style.iconArrow}>
+            <IconArrowUp />
+          </i>
         </button>
         <ul className={style.menuHover}>
           <li className={style.itemMenu}>
