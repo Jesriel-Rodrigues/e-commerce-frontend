@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import Header from "@/components/Header";
 import "primeflex/primeflex.css";
 import "primereact/resources/primereact.css";
