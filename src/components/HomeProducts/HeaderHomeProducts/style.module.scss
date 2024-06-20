@@ -1,3 +1,5 @@
+@use "../../../app/mixins.scss";
+
 .mainHeaderHomeProducts {
   display: flex;
   justify-content: center;
@@ -21,6 +23,21 @@
       padding: 0;
       margin: 0;
 
+      @media (max-width: 768px) {
+        justify-content: flex-start;
+        width: calc(100vw - 4rem);
+        overflow-y: auto;
+        margin-right: -10px;
+        margin-left: -10px;
+        white-space: nowrap;
+        mask-image: linear-gradient(to left, transparent 5px, #000 40px);
+        -webkit-mask-image: linear-gradient(
+          to left,
+          transparent 5px,
+          #000 40px
+        );
+      }
+
       li {
         text-transform: uppercase;
         font-weight: 600;
@@ -43,7 +60,7 @@
           bottom: -3px;
           left: 0;
           width: 0;
-          height: 2px;
+          height: 3px;
           transition: all 0.3s ease-in-out;
         }
 
